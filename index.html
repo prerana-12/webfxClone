@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebFX Clone</title>
+    <link rel="icon" type="image/x-icon" href="./webfxlogo.png">
     <link rel="stylesheet" href="./style.css">
                 <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,6 +19,7 @@
      <!-- header 1 -->
 
      <header id="page-header" class="page-header">
+         <div class="fxtopbar">
         <div class="wrapper">
         <div class="wrap-header">
             <div >
@@ -30,18 +32,18 @@
 
         <div class="link">
             <ul class="menu">
-                <li>
-                    <a href="#">
+                <li class="link_list">
+                    <a href="#" class="top-link">
                     <i class="fa-solid fa-magnifying-glass"></i>
                     Search
                 </a>
-                </li>
-                    <a href="#">Client login</a>
+                </li class="link_list">
+                    <a href="#" class="top-link">Client login</a>
                 <li>
 
-                </li>
+                </li class="link_list">
                 <li class="_phone">
-                    <a href="#" class="number">
+                    <a href="#" class="number top-link">
                         <i class="fa-solid fa-phone"></i>
                         888-256-9448
                     </a>
@@ -50,21 +52,25 @@
         </div>
         </div>
         </div>
-        
+    </div>
 
                  <!-- header 2 -->
 
         <div class="bottom-header">
-            <div class="wrapper padd">
+            <div class="wrapper">
                 <div class="wrap-nav">
-                    <a href="#" class="a_logo">
-                    <div class="web">Web<span><img src="./webfxlogo.png" alt="logo" class="logo-img"></span></div>
-                    </a>
+                    <div class="logo-div">
+                        <a href="#" class="a_logo">
+                            <img src="./logo.png" alt="" class="web-logo">
+                        </a>
+                    </div>
+                   
+                    <div class="main_nav">
                         <nav class="navigation">
-                             <ul class="menu menu_nav">
+                             <ul class="menu_nav">
                             <li class="menu_list">
                                 <a href="#" class="a_link">
-                                    <span>SEO & Lead Generation</span>
+                                    <span class="link-text">SEO & Lead Generation</span>
                                     <i class="fa-solid fa-angle-down"></i>
                                 </a>
                             </li>
@@ -100,7 +106,9 @@
 
                         </ul>
                     </nav>
-                    <div class="button"><a href="#" class="btn">
+                </div>
+                <div class="button">
+                    <a href="#" class="btn">
                         Get a Proposal
                     </a></div>
                 </div>
