@@ -374,7 +374,7 @@ body{
 
 
 
-.cir_first, .cir_theird{
+.cir_first{
     display: flex;
     flex-direction: column;
     align-items: center;
