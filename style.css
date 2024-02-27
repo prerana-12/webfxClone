@@ -13,20 +13,20 @@ body{
     "slnt" 0;
 }
 
+.page-header{
+    box-shadow: 0px 0px 12px 0px rgba(186,180,186,1);
+    overflow: hidden;
+    z-index: 1;
+}
+
 .fa-chart-simple{
     color: #00448F;
     margin-right: 4px;
     font-size: 15px;
 }
-.page-header{
-    position: sticky;
-    -webkit-box-shadow: 0px 0px 12px 0px rgba(186,180,186,1);
-    -moz-box-shadow: 0px 0px 12px 0px rgba(186,180,186,1);
-    box-shadow: 0px 0px 12px 0px rgba(186,180,186,1);
-    overflow: hidden;
-}
 
 .fxtopbar{
+    position: relative;
     padding: 16px 0 0;
 }
 
@@ -124,6 +124,7 @@ body{
 
 .bottom-header{
     position: sticky;
+    top: 0;
     z-index: 99;
     top: 0;
     left: 0;
@@ -133,6 +134,7 @@ body{
 }
 
 .wrap-nav{
+    
     display: flex;
     align-items: center;
     padding: 0;
@@ -192,6 +194,7 @@ body{
 
 
 .a_link{
+    position: relative;
     border-radius: 8px 8px 0 0;
     text-align: left;
     display: flex;
@@ -203,6 +206,13 @@ body{
     color: #222;
     text-decoration: none;
     cursor: pointer;
+    transition: 0.4s ease;
+
+}
+
+
+.a_link:hover{
+    background: #F9FBFF;
 }
 
 
@@ -236,6 +246,8 @@ body{
     font-size: 0.9rem;
 }
 
+
+
 .main-page{
     padding: 60px 0;
     background: url(./pic-2.png) no-repeat right bottom #CCE4FF;
@@ -243,6 +255,14 @@ body{
     z-index: 0;
     background-size: 100% auto;
     display: flex;
+}
+
+
+
+.menu_list:hover .mega_menu{
+    top: 22%;
+    opacity: 1;
+    visibility: visible;
 }
 
 .main-page::before{
@@ -307,6 +327,9 @@ body{
     margin-right: 10px;
     width: 18vw;
     padding: 2.4vh 20px 2.4vh 20px;
+    appearance: none;
+    outline-style: none;
+    border: 1px solid #00448F;
 }
 
 .input::placeholder{
@@ -317,6 +340,7 @@ body{
 }
 
 .brand-img{
+    position: relative;
     margin: 0 0 0 10px;
 }
 
@@ -334,11 +358,157 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 5px;
+    
+}
+
+.btn-send > a{
     font-size: 1.1rem;
     color: white;
-    border-radius: 5px;
+    text-decoration: none;
 }
 
 .fa-arrow-right{
     margin-left: 10px;
+}
+
+
+
+.cir_first, .cir_theird{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 6%;
+    z-index: 4;
+    width: 12vw;
+    height: 24vh;
+    background: #4DC1B9;
+    border-radius: 50%;
+    color: whitesmoke;
+}
+
+.cir_second{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 20%;
+    top: 10%;
+    width: 8vw;
+    height: 16vh;
+    background: #288CEC;
+    border-radius: 50%;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.cir_theird{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 53%;
+    left: 10%;
+    width: 8vw;
+    height: 16vh;
+    background: #288CEC;
+    border-radius: 50%;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.cir_fourth{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 63%;
+    right: 24%;
+    z-index: 4;
+    width: 12vw;
+    height: 24vh;
+    background: #4DC1B9;
+    border-radius: 50%;
+    color: whitesmoke;
+}
+h1{
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.textScroller{
+    display: flex;
+    padding: 0 24px 0 24px;
+    background: #B7D5FC;
+
+    overflow: hidden;
+}
+
+.spanner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px 0;
+}
+
+.fixed-text{
+    display: flex;
+    align-items: center;
+    width: 450px;
+    font-size: 14px;
+    color: #207DE9;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: #B7D5FC;
+    box-shadow: 10px 0 20px 20px #B7D5FC;
+    z-index: 1;
+}
+
+.space{
+    padding: 10px 0;
+}
+
+.scroll{
+    display: flex;
+    align-items: center;
+    color: #15395c;
+    font-size: 16x;
+    font-weight: 500;
+}
+
+.sec-two{
+    width: 100%;
+    padding: 0 24px;
+}
+
+.slider{
+    display: flex;
+    /* flex-basis: 1; */
+    align-items: center;
+    overflow: hidden;
+}
+
+.slider img{
+    margin: 50px;
+    background-size: cover;
+}
+
+.img-one{
+    width: 150px;
+    height: auto;
+}
+
+.img-two{
+    width: 120px;
+    height: auto;
+}
+
+.img-three{
+    width: 100px;
+    height: auto;
 }
