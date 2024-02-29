@@ -173,6 +173,8 @@ body{
 }
 
 .navigation{
+    
+    margin-left: 100px;
     line-height: 1.3rem;
     text-align: left;
 }
@@ -187,8 +189,6 @@ body{
     display: flex;
     align-items: center;
     list-style: none;
-    margin: 0 0;
-    padding: 0;
 }
 
 
@@ -244,8 +244,12 @@ body{
     align-items: center;
     justify-content: center;
     font-size: 0.9rem;
+    transition: 0.4s ease;
 }
 
+.btn:hover{
+    background-color: #0963c3;
+}
 
 
 .main-page{
@@ -358,8 +362,12 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 5px;
-    
+    border-radius: 5px;   
+    transition: 0.4s ease;
+}
+
+.btn-send:hover{
+    background-color: #00448F;
 }
 
 .btn-send > a{
@@ -401,8 +409,13 @@ body{
     width: 8vw;
     height: 16vh;
     background: #288CEC;
-    border-radius: 50%;
+    border-radius: 100%;
     color: whitesmoke;
+    text-align: center;
+}
+
+.sec-cir{
+    width: 100px;
     text-align: center;
 }
 
@@ -487,15 +500,15 @@ h1{
 }
 
 .slider{
+    margin-top: 5%;
     display: flex;
-    /* flex-basis: 1; */
     align-items: center;
     overflow: hidden;
 }
 
 .slider img{
     margin: 50px;
-    background-size: cover;
+    object-fit: cover;
 }
 
 .img-one{
@@ -512,3 +525,166 @@ h1{
     width: 100px;
     height: auto;
 }
+
+.section_three{
+    margin: 100px 0px;
+}
+
+.container{
+    padding: 0 24px;
+}
+
+.js-heading{
+    display: inline-block;
+    width: 100%;
+    font-size: 4.5rem;
+    text-align: center;
+    color: #152035;
+    margin-bottom: 10px;
+}
+
+.js-para{
+    width: 100%;
+    color: #152035;
+    text-align: center;
+    font-size: 1.9rem;
+}
+
+.js-section{
+    width: 100%;
+    padding: 0px 24px;
+}
+
+.js-links{
+    width: 100%;
+    margin-top: 50px;
+}
+
+.link-group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link-list{
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.8rem;
+    margin: 20px 40px;
+    list-style: none;
+    color: #8f9195;
+    cursor: pointer;
+
+}
+
+.active{
+    padding: 25px 20px;
+    background: #cce4ff89;
+    color: #0963c3;
+    border-radius: 10px;
+}
+
+.js-content{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+    font-weight: 600;
+    color: #888e9b;
+    font-size: 1.3rem;
+    line-height: 34px;
+}
+
+.js-double-section{
+    width: 100%;
+    padding: 0px 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.same{
+    width: 55vw;
+    height: 75vh;
+    background-color: #CCE4FF;
+    margin: 70px 14px;
+    border-radius: 30px;
+    
+
+}
+
+.side-section{
+    position: relative;
+    padding: 70px 50px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 45px;
+    background-color: #fff;
+    color: #374046;
+    -webkit-box-shadow: 0px 0px 66px -27px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 0px 66px -27px rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 66px -27px rgba(0,0,0,0.4);
+}
+
+.side-section:before{
+    content: "";
+    right: -89px;
+    top: 9px;
+    width: 530px;
+    height: 530px;
+    position: absolute;
+    z-index: -1;
+    background: #CCE4FF;
+    -webkit-filter: blur(100px);
+    filter: blur(100px);
+}
+
+.img-section{
+    background: url("./Corporate\ Headshots\ -\ Branding\ By\ Haley\ Adele.jpeg") no-repeat;
+    background-position: top ;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.call-to-action{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 50px;
+    margin-top: 40px;
+    font-weight: 900;
+    color: #116FDA;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.about-us:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 71%;
+    width: 0;
+    height: 2px;
+    background: #116FDA;
+    transition: 0.3s ease-in-out;
+}
+
+.about-us:hover:after{
+    width: 20%;
+}
+
+.about-us:hover .arrow{
+    transform: rotate(180deg);
+}
+
+
+.arrow{
+    background-color: #cce4ff9e;
+    padding: 8px;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
